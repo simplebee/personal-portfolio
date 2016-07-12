@@ -1,0 +1,267 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+i,
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+  font-size: 100px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p,
+a {
+  font-size: 20px;
+}
+
+p {
+  line-height: 2;
+}
+
+.anchor {
+  /*offset anchor for jump links*/
+  margin-top: -48px; /*subtract navbar height*/
+  border-top: 48px solid transparent; /*add navbar height*/
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  background-clip: padding-box;
+}
+
+.content {
+  /*general content div*/
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.grid-cell {
+  float: left;
+  width: 33.33%;
+  height: 200px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grid-cell:nth-of-type(1) {
+  /*cell 1*/
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,0.4),
+      rgba(0,0,0,0.4)
+    ),
+    url("https://pixabay.com/static/uploads/photo/2015/09/05/20/02/coding-924920_640.jpg");
+}
+
+.grid-cell:nth-of-type(2) {
+  /*cell 2*/
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,0.4),
+      rgba(0,0,0,0.4)
+    ),
+    url("https://pixabay.com/static/uploads/photo/2015/09/05/20/02/coding-924920_640.jpg");
+}
+
+.grid-cell:nth-of-type(3) {
+  /*cell 3*/
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,0.4),
+      rgba(0,0,0,0.4)
+    ),
+    url("https://pixabay.com/static/uploads/photo/2015/09/05/20/02/coding-924920_640.jpg");
+}
+
+.grid-cell:nth-of-type(4) {
+  /*cell 4*/
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,0.4),
+      rgba(0,0,0,0.4)
+    ),
+    url("https://pixabay.com/static/uploads/photo/2015/09/05/20/02/coding-924920_640.jpg");
+}
+
+.grid-cell:nth-of-type(5) {
+  /*cell 5*/
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,0.4),
+      rgba(0,0,0,0.4)
+    ),
+    url("https://pixabay.com/static/uploads/photo/2015/09/05/20/02/coding-924920_640.jpg");
+}
+
+.grid-cell:nth-of-type(6) {
+  /*cell 6*/
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,0.4),
+      rgba(0,0,0,0.4)
+    ),
+    url("https://pixabay.com/static/uploads/photo/2015/09/05/20/02/coding-924920_640.jpg");
+}
+
+.grid-cell h3 {
+  padding-top: 10px;
+  color: white;
+  text-align: center;
+}
+
+.grid-cell a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+
+.grid-cell a:hover {
+  /*lighten image on hover*/
+  background-image: 
+    linear-gradient(
+      rgba(255,255,255,0.15),
+      rgba(255,255,255,0.15)
+    );
+}
+
+#about .content,
+#contact .content,
+#project .content {
+  padding-top: 40px;
+  padding-bottom: 80px;
+}
+
+#about h2,
+#contact h2,
+#project h2 {
+  padding-bottom: 40px;
+}
+
+#about,
+#project {
+  color: white;
+  background-color: #5B7D98;
+}
+
+#about p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#contact {
+  color: white;
+  background-color: #282828;
+}
+
+#contact ul {
+  width: 120px;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+#contact a {
+  color: white;
+  line-height: 2;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: #969696;
+}
+
+#grid {
+  width: 100%;
+}
+
+#grid div:last-child {
+  /*end of 3x2 grid*/
+  clear: both;
+}
+
+#home {
+  color: white;
+  /*home page background image, darkened*/
+  background-image:
+    linear-gradient(
+      rgba(0,0,0,0.3),
+      rgba(0,0,0,0.3)
+    ),
+    url("https://images.unsplash.com/photo-1444927714506-8492d94b4e3d?crop=entropy&fit=crop&fm=jpg&h=975&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#home h1 {
+  position: relative;
+  top: 40%;
+}
+
+#home p {
+  position: relative;
+  top: 40%;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#home .content {
+  /*full page section*/
+  height: 100vh;
+}
+
+#nav {
+  /*fixed horizontal navbar*/
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #282828;
+  list-style-type: none;
+  z-index: 1; /*fixes layer order of navbar*/
+}
+
+#nav li {
+  float: left;
+}
+
+#nav li a {
+  display: block;
+  width: 120px;
+  padding: 12px 0;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+#nav li a:hover {
+  background-color: #3C3C3C;
+}
